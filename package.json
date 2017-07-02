@@ -1,0 +1,11 @@
+{
+  "name": "staff-hover-slideshow",
+  "version": "1.0.0",
+  "description": "A quick slideshow that activates on hover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
