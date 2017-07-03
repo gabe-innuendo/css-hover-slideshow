@@ -1,3 +1,3 @@
 # Quick CSS Hover Slideshow
 
-One Paragraph of project description goes here
+A simple CSS slideshow that activates on hover
