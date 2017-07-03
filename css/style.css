@@ -1,0 +1,43 @@
+.quickslide-wrapper {
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.quickslide-background {
+	background-size: cover;
+	background-position: 0% 0%;
+	width: 100%;
+	height: 300px;
+}
+
+.quickslide-overlay {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(0,0,0,0.1);
+	color: white;
+	opacity: 0;
+	z-index: 10;
+	position: absolute;
+	top:0;
+	left: 0;
+	transition: all 0.25s ease;
+}
+
+.quickslide-wrapper:hover .quickslide-background {
+	animation: quickslide 3.5s infinite; 
+}
+
+.quickslide-wrapper:hover .quickslide-overlay {
+	opacity: 1;
+	box-shadow: 1px 1px 10px black inset;
+} 
+
+@keyframes quickslide {
+  0%   { background-position: 0% 0px; }
+  25% { background-position: 0% -300px; }
+  50% { background-position: 0% -600px; }
+  75% { background-position: 0% -900px; }
+  100% { background-position: 0% -1200px; }
+}
